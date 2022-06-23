@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device=width, initial-scale=1" />
+    <meta name="keywords" content="fintech, economia, finanças, organizer" />
+    <title>Fin For All</title>
+    <meta
+      name="description"
+      content="O melhor app para você que quer acompanhar e ter controle sobre sua vida financeira!"
+    />
+    <link rel="icon" href="../assets/icon-logo.png" />
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="container grid">
+      <a href="login.html" class="header-logo">
+        <img
+          src="../assets/header-logo.png"
+          alt="Logo da fintech Fin For All"
+        />
+      </a>
+    </header>
+
+    <main>
+      <section id="social-login">
+        <div class="container grid">
+          <a id="google" class="social-button" href="#">
+            <object
+              type="image/svg+xml"
+              data="../assets/icons/google.svg"
+              class="social-icon"
+            ></object>
+            <p>Entrar com Google</p>
+          </a>
+          <a id="apple" class="social-button" href="#">
+            <object
+              type="image/svg+xml"
+              data="../assets/icons/apple.svg"
+              class="social-icon"
+            ></object>
+            <p>Entrar com Apple</p>
+          </a>
+          <a id="facebook" class="social-button" href="#">
+            <object
+              type="image/svg+xml"
+              data="../assets/icons/facebook.svg"
+              class="social-icon"
+            ></object>
+            <p>Entrar com Facebook</p>
+          </a>
+        </div>
+      </section>
+
+      <div class="divider container grid"><p>OU</p></div>
+
+      <section id="login">
+        <div class="container grid">
+          <form action="#" class="grid">
+            <input
+              id="user"
+              type="text"
+              placeholder="Número de celular, usuário ou email"
+              required
+            />
+            <input id="password" type="password" placeholder="Senha" required />
+            <a href="#" class="forgotten">Esqueceu sua senha?</a>
+            <input type="submit" value="ENTRAR" class="button" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="footer">
+        <div class="container grid">
+          <p>Não tem uma conta? <a href="register.html">Registre-se</a></p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+:root {
+  --placeholder-color: hsla(0, 0%, 73%, 1);
+  --text-color: hsla(0, 0%, 100%, 1);
+  --alt-text-color: hsla(0, 0%, 73%, 1);
+  --brighter-button-text-color: hsla(0, 0%, 100%, 1);
+  --darker-button-text-color: hsla(0, 0%, 0%, 1);
+  --alt-button-text-color: hsla(260, 69%, 42%, 1);
+  --bright-button-color: hsla(0, 0%, 100%, 1);
+  --dark-button-color: hsla(0, 0%, 0%, 1);
+  --alt-button-color: hsla(238, 60%, 42%, 1);
+}
+
+.container {
+  margin: 0 1.75rem;
+}
+
+.grid {
+  display: grid;
+}

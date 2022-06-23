@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device=width, initial-scale=1" />
+    <meta name="keywords" content="fintech, economia, finanças, organizer" />
+    <title>Fin For All</title>
+    <link rel="icon" href="../assets/icon-logo.png" />
+    <meta
+      name="description"
+      content="O melhor app para você que quer acompanhar e ter controle sobre sua vida financeira!"
+    />
+
+    <!--Rels-->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/register.css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="container grid">
+      <a href="login.html" class="header-logo">
+        <img
+          src="../assets/header-logo.png"
+          alt="Logo da fintech Fin For All"
+        />
+      </a>
+    </header>
+
+    <main>
+      <section id="social-register">
+        <div class="container grid">
+          <a id="google" class="social-button" href="#">
+            <object
+              type="image/svg+xml"
+              data="../assets/icons/google.svg"
+              class="social-icon"
+            ></object>
+            <p>Cadastrar-se com Google</p>
+          </a>
+          <a id="apple" class="social-button" href="#">
+            <object
+              type="image/svg+xml"
+              data="../assets/icons/apple.svg"
+              class="social-icon"
+            ></object>
+            <p>Cadastrar-se com Apple</p>
+          </a>
+        </div>
+      </section>
+
+      <div class="divider container grid"><p>OU</p></div>
+
+      <section id="register">
+        <div class="container grid">
+          <form action="login.html" class="grid">
+            <input
+              id="name"
+              type="text"
+              placeholder="Nome e Sobrenome"
+              required
+            />
+            <input id="email" type="email" placeholder="Email" required />
+            <input id="password" type="password" placeholder="Senha" required />
+            <input type="submit" value="CADASTRAR" class="button" />
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
