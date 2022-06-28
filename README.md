@@ -9,4 +9,4 @@ Vinicius Arcanjo, RM95559</h2>
 </ul><br>
 
 <p>Atualmente, o projeto só possui desenvolvidas 2 telas, Cadastro e Login... e algumas g@mb1arr4s.<br>
-Com fé, tempo e muito café ☕ vai melhorar!</p>
+Com fé, tempo e muito café ☕, vai melhorar!</p>
