@@ -10,10 +10,18 @@
   --alt-button-color: hsla(238, 60%, 42%, 1);
 }
 
-.container {
-  margin: 0 1.75rem;
-}
-
 .grid {
   display: grid;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 0 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    margin: 0 1.75rem;
+  }
 }

@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device=width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="fintech, economia, finanças, organizer" />
     <title>Fin For All</title>
     <meta
@@ -25,70 +25,82 @@
   </head>
 
   <body>
-    <header class="container grid">
-      <a href="login.html" class="header-logo">
-        <img
-          src="../assets/header-logo.png"
-          alt="Logo da fintech Fin For All"
-        />
-      </a>
-    </header>
+    <div class="limiter">
+      <header class="container grid">
+        <a href="login.html" class="header-logo">
+          <img
+            src="../assets/header-logo.png"
+            alt="Logo da fintech Fin For All"
+          />
+        </a>
+      </header>
 
-    <main>
-      <section id="social-login">
-        <div class="container grid">
-          <a id="google" class="social-button" href="#">
-            <object
-              type="image/svg+xml"
-              data="../assets/icons/google.svg"
-              class="social-icon"
-            ></object>
-            <p>Entrar com Google</p>
-          </a>
-          <a id="apple" class="social-button" href="#">
-            <object
-              type="image/svg+xml"
-              data="../assets/icons/apple.svg"
-              class="social-icon"
-            ></object>
-            <p>Entrar com Apple</p>
-          </a>
-          <a id="facebook" class="social-button" href="#">
-            <object
-              type="image/svg+xml"
-              data="../assets/icons/facebook.svg"
-              class="social-icon"
-            ></object>
-            <p>Entrar com Facebook</p>
-          </a>
-        </div>
-      </section>
+      <div id="home" class="container grid">
+        <aside class="container">
+          <img src="../assets/images/login_page.jpg" alt="" />
+          <p>
+            "O melhor app para você que quer acompanhar e ter controle sobre sua
+            vida financeira!"
+          </p>
+        </aside>
 
-      <div class="divider container grid"><p>OU</p></div>
+        <main class="container">
+          <section id="social-login">
+            <div class="grid">
+              <a id="google" class="social-button" href="#">
+                <object
+                  type="image/svg+xml"
+                  data="../assets/icons/google.svg"
+                  class="social-icon"
+                ></object>
+                <p>Entrar com Google</p>
+              </a>
+              <a id="apple" class="social-button" href="#">
+                <object
+                  type="image/svg+xml"
+                  data="../assets/icons/apple.svg"
+                  class="social-icon"
+                ></object>
+                <p>Entrar com Apple</p>
+              </a>
+              <a id="facebook" class="social-button" href="#">
+                <object
+                  type="image/svg+xml"
+                  data="../assets/icons/facebook.svg"
+                  class="social-icon"
+                ></object>
+                <p>Entrar com Facebook</p>
+              </a>
+            </div>
+          </section>
 
-      <section id="login">
-        <div class="container grid">
-          <form action="#" class="grid">
-            <input
-              id="user"
-              type="text"
-              placeholder="Número de celular, usuário ou email"
-              required
-            />
-            <input id="password" type="password" placeholder="Senha" required />
-            <a href="#" class="forgotten">Esqueceu sua senha?</a>
-            <input type="submit" value="ENTRAR" class="button" />
-          </form>
-        </div>
-      </section>
-    </main>
+          <div class="divider container grid"><p>OU</p></div>
 
-    <footer>
-      <section id="footer">
-        <div class="container grid">
-          <p>Não tem uma conta? <a href="register.html">Registre-se</a></p>
-        </div>
-      </section>
-    </footer>
+          <section id="login">
+            <div class="grid">
+              <form action="#" class="grid">
+                <input
+                  id="user"
+                  type="text"
+                  placeholder="Número de celular, usuário ou email"
+                  required
+                />
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Senha"
+                  required
+                />
+                <a href="#" class="forgotten">Esqueceu sua senha?</a>
+                <input type="submit" value="ENTRAR" class="button" />
+              </form>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer id="footer" class="container grid">
+        <p>Não tem uma conta? <a href="register.html">Registre-se</a></p>
+      </footer>
+    </div>
   </body>
 </html>

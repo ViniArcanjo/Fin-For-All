@@ -1,144 +1,444 @@
 @import url(style.css);
 
+@media (max-width: 1200px) {
+  /*=== base ===*/
+    body {
+      background: hsla(260, 69%, 42%, 1);
+      color: var(--text-color);
+      background-repeat: no-repeat;
+    }
+
+    .limiter {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+    }
+    
+    main {
+      overflow: hidden;
+    }
+  
+    #home {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  
+  
+    /*=== header ===*/
+    header img {
+      width: 7.125rem;
+      height: auto;
+      padding: 1.75rem 0;
+    }
+  
+  
+    /*=== aside ===*/
+    aside {
+      display: none;
+    }
+  
+    /*=== social-login ===*/
+    #social-login .grid{
+      gap: 0.625rem;
+    }
+  
+    #social-login .social-button {
+      height: 2.5rem;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0.625rem 3rem;
+      border-radius: 5px;
+      font: 300 1rem 'Open Sans', sans-serif;
+    }
+  
+    #social-login .social-button p {
+      margin-right: -2rem;
+    }
+  
+    #social-login object.social-icon {
+      width: 1rem;
+      height: auto;
+      margin-right: 1rem;
+      margin-left: -2rem;
+    }
+  
+    #social-login #google.social-button {
+      background-color: var(--bright-button-color);
+      color: var(--darker-button-text-color);
+      transition: 0.5s;
+    }
+  
+    #social-login #google.social-button:hover {
+      background-color: hsla(0, 0%, 85%, 1);
+      color: hsla(0, 0%, 12%, 1);
+    }
+  
+    #social-login #apple.social-button {
+      background-color: var(--dark-button-color);
+      color: var(--brighter-button-text-color);
+      transition: 0.5s;
+    }
+  
+    #social-login #apple.social-button:hover {
+      background-color: hsla(0, 0%, 12%, 1);
+    }
+  
+    #social-login #facebook.social-button {
+      background-color: var(--alt-button-color);
+      color: var(--brighter-button-text-color);
+      transition: 0.5s;
+    }
+  
+    #social-login #facebook.social-button:hover {
+      background-color: hsla(238, 60%, 50%, 1);
+    }
+  
+  
+    /*=== divider ===*/
+    .divider {
+      margin-top: 1.75rem;
+      margin-bottom: 1.75rem;
+    }
+  
+    .divider.container {
+      justify-content: center;
+    }
+  
+    .divider p {
+      position: relative;
+      font: 400 0.75rem 'Open Sans', sans-serif;
+    }
+  
+    .divider p::before {
+      content: '';
+      width: calc(100vw);
+      height: 1px;  
+      background: hsla(260, 100%, 65%, 1);
+      position: absolute;
+      top: 0.5rem;
+      left: 2rem;
+    }
+  
+    .divider p::after {
+      content: '';
+      width: 100vw;
+      height: 1px;  
+      background: hsla(260, 100%, 65%, 1);
+      position: absolute;
+      top: 0.5rem;
+      right: 2rem;
+    }
+  
+  
+    /*=== login ===*/
+    #login form.grid {
+      gap: 1rem;
+    }
+  
+    #login form {
+      font: 300 1rem 'Open Sans', sans-serif;
+      color: var(--alt-text-color);
+    }
+  
+    #login form #user,
+    #login form #password {
+      color: var(--text-color);
+      background-color: hsla(0, 0%, 0%, 0);
+      border-style: solid;
+      border-color: hsla(260, 100%, 65%, 1);
+      border-width: 0 0 1px 0;
+      padding-bottom: 0.5rem;
+    }
+  
+    #login form input:focus {
+      box-shadow: 0 0 0 0;
+      border: 0 none;
+      outline: 0;
+    }
+  
+    #login form .forgotten {
+      font: 700 0.625rem 'Open Sans', sans-serif;
+      color: var(--alt-text-color);
+      text-align: right;
+    }
+  
+    #login form .button {
+      height: 2.5rem;
+      display: inline-flex;
+      justify-content: center;
+      padding: 0.5rem;
+      border-radius: 5px;
+      font: 700 1rem 'Open Sans', sans-serif;
+      background-color: var(--bright-button-color);
+      color: var(--alt-button-text-color);
+      border: none;
+      transition: 0.5s;
+      }
+  
+      #login form .button:hover {
+        background-color: hsla(0, 0%, 85%, 1);
+      }
+  
+  
+    /*=== footer ===*/
+    #footer {
+      border-top-style: solid;
+      border-top-width: 1px;
+      border-top-color: hsla(260, 100%, 65%, 1);
+    }
+  
+    #footer.grid {
+      justify-content: center;
+    }
+  
+    #footer.container {
+      margin: 0;
+    }
+  
+    #footer p {
+      font: 400 0.75rem 'Open Sans', sans-serif;
+      color: var(--text-color);
+      padding: 1.75rem 0;
+    }
+  
+    #footer p a {
+      font: 400 0.75rem 'Open Sans', sans-serif;
+      color: var(--alt-text-color);
+    }
+  }
+
+@media (min-width: 1200px) {
 /*=== base ===*/
-body {
-  background: linear-gradient(
+  body {
+    background: linear-gradient(
       180deg,
       hsla(260, 69%, 42%, 1),
       hsla(260, 56%, 36%, 1)
     );
     color: var(--text-color);
     background-repeat: no-repeat;
-}
-/*=== header ===*/
-header img {
-  width: 7.125rem;
-  height: auto;
-  padding: 1.75rem 0 0 0;
-}
-/*=== social-login ===*/
-#social-login {
-  margin-bottom: 1.75rem;
-  margin-top: 1.75rem;
-}
-#social-login .grid{
-  gap: 0.625rem;
-}
-#social-login .social-button {
-  height: 2.5rem;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0.625rem 3rem;
-  border-radius: 5px;
-  font: 300 1rem 'Open Sans', sans-serif;
-}
-#social-login .social-button p {
-  margin-right: -2rem;
-}
-#social-login object.social-icon {
-  width: 1rem;
-  height: auto;
-  margin-right: 1rem;
-  margin-left: -2rem;
-}
-#social-login #google.social-button {
-  background-color: var(--bright-button-color);
-  color: var(--darker-button-text-color);
-}
-#social-login #apple.social-button {
-  background-color: var(--dark-button-color);
-  color: var(--brighter-button-text-color);
-}
-#social-login #facebook.social-button {
-  background-color: var(--alt-button-color);
-  color: var(--brighter-button-text-color);
-}
-/*=== divider ===*/
-.divider.container {
-  justify-content: center;
-  overflow-x: hidden;
-}
-.divider p {
-  position: relative;
-  font: 400 0.75rem 'Open Sans', sans-serif;
-}
-.divider p::before {
-  content: '';
-  width: calc(100vw);
-  height: 1px;  
-  background: hsla(260, 100%, 65%, 1);
-  position: absolute;
-  top: 0.5rem;
-  left: 2rem;
-}
-.divider p::after {
-  content: '';
-  width: 100vw;
-  height: 1px;  
-  background: hsla(260, 100%, 65%, 1);
-  position: absolute;
-  top: 0.5rem;
-  right: 2rem;
-}
-/*=== login ===*/
-#login {
-  margin-top: 1.625rem;
-  margin-bottom: 3rem;
-}
-#login form.grid {
-  gap: 1rem;
-}
-#login form {
-  font: 300 1rem 'Open Sans', sans-serif;
-  color: var(--alt-text-color);
-}
-#login form #user,
-#login form #password {
-  color: var(--text-color);
-  background-color: hsla(0, 0%, 0%, 0);
-  border-style: solid;
-  border-color: hsla(260, 100%, 65%, 1);
-  border-width: 0 0 1px 0;
-  padding-bottom: 0.5rem;
-}
-#login form input:focus {
-  box-shadow: 0 0 0 0;
-  border: 0 none;
-  outline: 0;
-}
-#login form .forgotten {
-  font: 700 0.625rem 'Open Sans', sans-serif;
-  color: var(--alt-text-color);
-  text-align: right;
-}
-#login form .button {
-  height: 2.5rem;
-  display: inline-flex;
-  justify-content: center;
-  padding: 0.5rem;
-  border-radius: 5px;
-  font: 700 1rem 'Open Sans', sans-serif;
-  background-color: var(--bright-button-color);
-  color: var(--alt-button-text-color);
-  border: none;
   }
-/*=== footer ===*/
-footer {
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: hsla(260, 100%, 65%, 1);
-}
-footer .grid {
-  justify-content: center;
-}
-footer p {
-  font: 400 0.75rem 'Open Sans', sans-serif;
-  color: var(--text-color);
-  padding: 1.75rem 0;
-}
-footer p a {
-  font: 400 0.75rem 'Open Sans', sans-serif;
-  color: var(--alt-text-color);
+
+  .limiter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+  main {
+    overflow: hidden;
+  }
+
+  #home {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+
+  /*=== header ===*/
+  header img {
+    width: 7.125rem;
+    height: auto;
+    padding: 1.75rem 0;
+  }
+
+
+  /*=== aside ===*/
+  aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  aside img {
+    width: 80%;
+    height: auto;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 hsla(0, 0%, 0%, 0.5);
+  }
+
+  aside p {
+    font: 400 1rem 'Open Sans', sans-serif;
+    text-align: center;
+    width: 60%;
+  }
+
+
+  /*=== social-login ===*/
+  #social-login .grid{
+    gap: 0.625rem;
+  }
+
+  #social-login .social-button {
+    height: 2.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.625rem 3rem;
+    border-radius: 5px;
+    font: 300 1rem 'Open Sans', sans-serif;
+  }
+
+  #social-login .social-button p {
+    margin-right: -2rem;
+  }
+
+  #social-login object.social-icon {
+    width: 1rem;
+    height: auto;
+    margin-right: 1rem;
+    margin-left: -2rem;
+  }
+
+  #social-login #google.social-button {
+    background-color: var(--bright-button-color);
+    color: var(--darker-button-text-color);
+    transition: 0.5s;
+  }
+
+  #social-login #google.social-button:hover {
+    background-color: hsla(0, 0%, 85%, 1);
+    color: hsla(0, 0%, 12%, 1);
+  }
+
+  #social-login #apple.social-button {
+    background-color: var(--dark-button-color);
+    color: var(--brighter-button-text-color);
+    transition: 0.5s;
+  }
+
+  #social-login #apple.social-button:hover {
+    background-color: hsla(0, 0%, 12%, 1);
+  }
+
+  #social-login #facebook.social-button {
+    background-color: var(--alt-button-color);
+    color: var(--brighter-button-text-color);
+    transition: 0.5s;
+  }
+
+  #social-login #facebook.social-button:hover {
+    background-color: hsla(238, 60%, 50%, 1);
+  }
+
+
+  /*=== divider ===*/
+  .divider {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .divider.container {
+    justify-content: center;
+  }
+
+  .divider p {
+    position: relative;
+    font: 400 0.75rem 'Open Sans', sans-serif;
+  }
+
+  .divider p::before {
+    content: '';
+    width: calc(100vw);
+    height: 1px;  
+    background: hsla(260, 100%, 65%, 1);
+    position: absolute;
+    top: 0.5rem;
+    left: 2rem;
+  }
+
+  .divider p::after {
+    content: '';
+    width: 100vw;
+    height: 1px;  
+    background: hsla(260, 100%, 65%, 1);
+    position: absolute;
+    top: 0.5rem;
+    right: 2rem;
+  }
+
+
+  /*=== login ===*/
+  #login form.grid {
+    gap: 1rem;
+  }
+
+  #login form {
+    font: 300 1rem 'Open Sans', sans-serif;
+    color: var(--alt-text-color);
+  }
+
+  #login form #user,
+  #login form #password {
+    color: var(--text-color);
+    background-color: hsla(0, 0%, 0%, 0);
+    border-style: solid;
+    border-color: hsla(260, 100%, 65%, 1);
+    border-width: 0 0 1px 0;
+    padding-bottom: 0.5rem;
+  }
+
+  #login form input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+  }
+
+  #login form .forgotten {
+    font: 700 0.625rem 'Open Sans', sans-serif;
+    color: var(--alt-text-color);
+    text-align: right;
+  }
+
+  #login form .button {
+    height: 2.5rem;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font: 700 1rem 'Open Sans', sans-serif;
+    background-color: var(--bright-button-color);
+    color: var(--alt-button-text-color);
+    border: none;
+    transition: 0.5s;
+    }
+
+    #login form .button:hover {
+      background-color: hsla(0, 0%, 85%, 1);
+    }
+
+
+  /*=== footer ===*/
+  #footer {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: hsla(260, 100%, 65%, 1);
+  }
+
+  #footer.grid {
+    justify-content: center;
+  }
+
+  #footer.container {
+    margin: 0;
+  }
+
+  #footer p {
+    font: 400 0.75rem 'Open Sans', sans-serif;
+    color: var(--text-color);
+    padding: 1.75rem 0;
+  }
+
+  #footer p a {
+    font: 400 0.75rem 'Open Sans', sans-serif;
+    color: var(--alt-text-color);
+  }
 }
