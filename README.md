@@ -1,7 +1,7 @@
 <img src="assets/header-logo.png">
 
-<h2>Projeto de Fintech</h2>
-<h3>Vinicius Arcanjo, RM95559</h3><br>
+<h2>Projeto de Fintech<br>
+Vinicius Arcanjo, RM95559</h2>
 
 <ul>
   <li>💻 Este é um projeto escolar da FIAP, que visa desenvolver uma Web Application de controle de finanças...</li>
